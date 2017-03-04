@@ -1,0 +1,232 @@
+<HTML>
+<HEAD>
+<TITLE>JavaScript Source Code 3000:  Games:  Ask Mustafa</TITLE>
+<META HTTP-EQUIV="JavaScript Source Code 3000" CONTENT = "no-cache">
+<META NAME="date" CONTENT="2000-09-09">
+<META NAME="channel" CONTENT="Web Developer">
+<META NAME="author" CONTENT="Hoop Hooper (hooper119@aol.com)">
+<META NAME="section" CONTENT="Games">
+<META NAME="description" CONTENT="We've captured the spy Mustafa from the Austin Powers movie.  Mustafa will refuse to answer any question you ask.  Except, he hates hearing the same question three times in a row.  Ask him a question three times in a row and he will answer you.  Fun!">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Hoop Hooper (hooper119@aol.com) -->
+<!-- Web Site:  http://www.angelfire.com/pa3/muddas -->
+<!-- Modified By:  Ronnie T. Moore, Editor -->
+
+
+
+
+<!-- Begin
+var refusalarray = new Array(
+"I'll Never Tell You!",
+"I spit at the question!  Pptt!",
+"Go To Hell, Powers!",
+"I will take it to the grave with me!",
+"Kiss my ass!",
+"You can torture me if you like, I will never tell!",
+"I will never tell you!",
+"I cannot tell you!",
+"My lips are sealed shut, you can't open them!"
+); // No comma after last item on line above!
+
+var answerarray = new Array(
+"Damn, three times.  Yes! That's the answer!",
+"No way.  There's your answer, you happy now?",
+"Maybe.  Are you satisfied?",
+"Yes, yes, of course!",
+"Without a doubt!",
+"Yeah, I think so.",
+"Probably, why do you care though?"
+); // No comma after last item on line above!
+var num1, num2, tries = 0;
+
+function ask(frm) {
+if (frm.question.value == "") {
+alert("Please type your question.");
+frm.question.focus();
+return "";
+}
+rand1 = Math.round( (refusalarray.length - 1) * Math.random());
+rand2 = Math.round( (answerarray.length - 1) * Math.random());
+tries++;
+switch (tries) {
+case 1 : 
+case 2 : return refusalarray[rand1];
+         break;
+case 3 : return answerarray[rand2];
+         break;
+case 4 : tries = 0;
+         frm.question.value = frm.answer.value = "";
+	 return "";
+         break;
+   }
+}
+//  End -->
+</script>
+</HEAD>
+
+<BODY BGCOLOR=#ffffff vlink=#0000ff>
+
+<BR>
+<center>
+<table width=600 cellpadding=0 cellspacing=10>
+<tr>
+<td width=468 align=center>
+
+    
+    
+</td>
+<td width=120 align=center>
+    
+</td>
+</tr>
+</table>
+<BR>
+<BR>
+<basefont size=3>
+<FONT SIZE="+2" FACE="Helvetica,Arial">
+<A HREF="../index.htm" /" TARGET="_top"><FONT COLOR="#0000FF"><b>Home</b></font></A>
+<img src="../img/arrow.gif" /img/arrow.gif" height=13 width=7 border=0 alt="}">
+<A HREF="index.htm" /games/"><font color="#FF0000"><b>Games</b></font></A>
+<img src="../img/arrow.gif" /img/arrow.gif" height=13 width=7 border=0 alt="}">
+<FONT COLOR="#006666"><b>Ask Mustafa</b></font></font>
+<BR>
+<BR>
+<table BORDER=0 WIDTH=486 CELLPADDING=3 CELLSPACING=0>
+<tr><td><font FACE="helvetica,arial,geneva">
+<br>
+<br>
+<!-- Description --><!--content_start-->
+We've captured the spy Mustafa from the Austin Powers movie.  Mustafa will refuse to answer any question you ask.  Except, he hates hearing the same question three times in a row.  Ask him a question three times in a row and he will answer you.  Fun!
+<hr>
+</td></tr>
+</table>
+<!-- Demonstration -->
+<center>
+<img src="../img/ask-mustafa/mustafa.gif" /img/ask-mustafa/mustafa.gif" width=122 height=167>
+<p>
+<h2>Ask Mustafa</h2>
+<p>
+
+<form name=mustafaform>
+Your Question:  <input type=text name=question size=50>
+<p>
+<input type=button value="Ask Mustafa" onClick="this.form.answer.value = ask(this.form);">
+<p>
+Mustafa's Reply: <input type=text name=answer size=50>
+</form>
+</center>
+<P>
+<P>
+<a name="source">
+<table BORDER=0 WIDTH=486 CELLPADDING=3 CELLSPACING=0>
+<tr><td BGCOLOR=yellow><font FACE="helvetica,arial,geneva"><b>JavaScript Source Code 3000:  Games:  Ask Mustafa</b>
+<p>Simply click inside the window below, use your cursor to highlight the script, and copy (type Control-c or Apple-c) the script into a new file in your text editor (such as Note Pad or Simple Text) and save (Control-s or Apple-s).  The script is yours!!!
+<br><br></font></td></tr>
+<tr><td BGCOLOR=yellow ALIGN=CENTER>
+<form NAME="copy">
+
+<DIV align="center">
+<input type=button value="Highlight All" onClick="javascript:this.form.txt.focus();this.form.txt.select();">&nbsp;&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="text" NAME="total" VALUE="Script Size:  2.32 KB" size=24>
+</DIV>
+
+<textarea NAME="txt" ROWS=20 COLS=75 WRAP=VIRTUAL>
+
+&lt;!-- TWO STEPS TO INSTALL ASK MUSTAFA:
+
+  1.  Copy the coding into the HEAD of your HTML document
+  2.  Add the last code into the BODY of your HTML document  --&gt;
+
+&lt;!-- STEP ONE: Paste this code into the HEAD of your HTML document  --&gt;
+
+&lt;HEAD&gt;
+
+&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+&lt;!-- Original:  Hoop Hooper (hooper119@aol.com) --&gt;
+&lt;!-- Web Site:  http://www.angelfire.com/pa3/muddas --&gt;
+&lt;!-- Modified By:  Ronnie T. Moore, Editor --&gt;
+
+&lt;! &gt;
+&lt;! &gt;
+
+&lt;!-- Begin
+var refusalarray = new Array(
+"I'll Never Tell You!",
+"I spit at the question!  Pptt!",
+"Go To Hell, Powers!",
+"I will take it to the grave with me!",
+"Kiss my ass!",
+"You can torture me if you like, I will never tell!",
+"I will never tell you!",
+"I cannot tell you!",
+"My lips are sealed shut, you can't open them!"
+); // No comma after last item on line above!
+
+var answerarray = new Array(
+"Damn, three times.  Yes! That's the answer!",
+"No way.  There's your answer, you happy now?",
+"Maybe.  Are you satisfied?",
+"Yes, yes, of course!",
+"Without a doubt!",
+"Yeah, I think so.",
+"Probably, why do you care though?"
+); // No comma after last item on line above!
+var num1, num2, tries = 0;
+
+function ask(frm) {
+if (frm.question.value == "") {
+alert("Please type your question.");
+frm.question.focus();
+return "";
+}
+rand1 = Math.round( (refusalarray.length - 1) * Math.random());
+rand2 = Math.round( (answerarray.length - 1) * Math.random());
+tries++;
+switch (tries) {
+case 1 : 
+case 2 : return refusalarray[rand1];
+         break;
+case 3 : return answerarray[rand2];
+         break;
+case 4 : tries = 0;
+         frm.question.value = frm.answer.value = "";
+	 return "";
+         break;
+   }
+}
+//  End --&gt;
+&lt;/script&gt;
+&lt;/HEAD&gt;
+
+&lt;!-- STEP TWO: Copy this code into the BODY of your HTML document  --&gt;
+
+&lt;BODY&gt;
+
+&lt;center&gt;
+&lt;img src="../img/ask-mustafa/mustafa.gif" width=122 height=167&gt;
+&lt;p&gt;
+&lt;h2&gt;Ask Mustafa&lt;/h2&gt;
+&lt;p&gt;
+
+&lt;form name=mustafaform&gt;
+Your Question:  &lt;input type=text name=question size=50&gt;
+&lt;p&gt;
+&lt;input type=button value="Ask Mustafa" onClick="this.form.answer.value = ask(this.form);"&gt;
+&lt;p&gt;
+Mustafa's Reply: &lt;input type=text name=answer size=50&gt;
+&lt;/form&gt;
+&lt;/center&gt;
+
+ 
+
+&lt;!-- Script Size:  2.32 KB --&gt;</textarea><br><font FACE="helvetica,arial,geneva"></font></td></tr>
+
+</table>
+</form>
+</FONT>
+</CENTER>
+
+
+</center>
+</body></html>
